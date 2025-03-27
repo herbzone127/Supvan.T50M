@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Supvan.T50M.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Button Text="Scan for Devices" Clicked="OnScanClicked" />
+            <Picker x:Name="DevicePicker" Title="Select a Device" />
+            <Button Text="Connect and Print" Clicked="OnConnectClicked" IsEnabled="False" x:Name="ConnectButton" />
+            <Label x:Name="StatusLabel" Text="Status: Idle" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
