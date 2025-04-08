@@ -18,6 +18,10 @@ namespace Supvan.T50M
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+#if ANDROID
+        // Register USB permission broadcast receiver
+        builder.Services.AddSingleton<LabelPrinterService>();
+#endif
 
             return builder.Build();
         }
